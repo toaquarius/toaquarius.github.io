@@ -5,7 +5,7 @@ name: toaquariush action
 on: [push]
 # on:    
 #  schedule:
-#  - cron: '14 7,17 * * *'
+#  - cron: '14 17 * * *'
 
 
 jobs:
