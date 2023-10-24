@@ -98,11 +98,11 @@ class pageUtil:
         print("change_content asid footer sitemap robots mainpage end")
     
     def set_book_info(self, isbn, pub_nm, pub_dt, author, rw_cnt):
-        self.content.select_one('#isbn').string   = f'ISBN {isbn}'
-        self.content.select_one('#pub_nm').string = f'출판사 {pub_nm}'
-        self.content.select_one('#pub_dt').string = f'출판일 {pub_dt}'
-        self.content.select_one('#author').string = f'저자 {author}'
-        self.content.select_one('#rw_cnt').string = f'평점 {rw_cnt}'
+        self.content.select_one('#isbn').string   = f'ISBN: {isbn}'
+        self.content.select_one('#pub_nm').string = f'출판사: {pub_nm}'
+        self.content.select_one('#pub_dt').string = f'출판일: {pub_dt}'
+        self.content.select_one('#author').string = f'저자: {author}'
+        self.content.select_one('#rw_cnt').string = f'평점: {rw_cnt}'
 
     def change_main_page(self):
         print("change_main_page start : ", self.real_content_path )
