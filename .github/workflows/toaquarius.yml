@@ -3,9 +3,9 @@
 
 name: toaquariush action
 on: [push]
-# on:    
-#  schedule:
-#  - cron: '14 6,16 * * *'
+on:    
+ schedule:
+ - cron: '14 7,17 * * *'
 
 
 jobs:
