@@ -48,9 +48,9 @@ class kyobo():
 				publisher 			= askUtil.custUtil(i, 'pbcmName')
 				pubDate 			= askUtil.custUtil(i, 'rlseDate')					
 
-				rwcnt 		 		= askUtil.custUtil(i, 'buyRevwRvgr') #평점			
+				rwcnt 		 		= round(askUtil.custUtil(i, 'buyRevwRvgr')) #평점			
 				coverLargeUrl 		= None
-							
+				
 				try:
 					naver_api_book_result 			= self.nvApi.bookSearch(isbn)
 					time.sleep(1)
