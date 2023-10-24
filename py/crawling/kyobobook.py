@@ -24,7 +24,7 @@ class kyobo():
 			
 	def getBookList(self):
 		v_page = askUtil.getRandom(1,5)
-		v_page = 2
+		# v_page = 2
 		print("v_page : ",v_page)
 		url = f'https://product.kyobobook.co.kr/api/gw/pub/pdt/best-seller/online?page={v_page}&per=100&period=001&dsplDvsnCode=000&dsplTrgtDvsnCode=001'
 		
