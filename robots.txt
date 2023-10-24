@@ -3,4 +3,4 @@ Disallow: /tp
 Disallow: /py 
 Allow:/ 
 
-Sitemap: https://tocapricornus.github.io/sitemap.xml
+Sitemap: https://toaquarius.github.io/sitemap.xml
