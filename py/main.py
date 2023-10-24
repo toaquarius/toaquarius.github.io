@@ -60,7 +60,8 @@ if __name__=="__main__":
             pub_nm  = bookList[0]['PUB_SR']
             pub_dt  = bookList[0]['PUB_DT']
             author  = bookList[0]['AUTHOR']
-            pu.set_book_info(isbn, pub_nm, pub_dt, author)
+            rw_cnt  = bookList[0]['RW_CNT']
+            pu.set_book_info(isbn, pub_nm, pub_dt, author,rw_cnt)
             pu.set_page_nm(isbn, 'html')
             print(" isbn : ", isbn)
             
