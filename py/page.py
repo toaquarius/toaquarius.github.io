@@ -97,11 +97,12 @@ class pageUtil:
         self.change_main_page()
         print("change_content asid footer sitemap robots mainpage end")
     
-    def set_book_info(self, isbn, pub_nm, pub_dt, author):
+    def set_book_info(self, isbn, pub_nm, pub_dt, author, rw_cnt):
         self.content.select_one('#isbn').string  = isbn
         self.content.select_one('#pub_nm').string = pub_nm
         self.content.select_one('#pub_dt').string = pub_dt
         self.content.select_one('#author').string = author
+        self.content.select_one('#rw_cnt').string = rw_cnt
 
     def change_main_page(self):
         print("change_main_page start : ", self.real_content_path )
