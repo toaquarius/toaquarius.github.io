@@ -54,11 +54,12 @@ window.addEventListener('load', function() {
         }
       });
       let adsense_client = document.querySelector('meta[name="google-adsense-account"]').content;
+      let gtag_id = document.querySelector('meta[name="analytics_gtag"]').content;
       
       if (adsense_client !== ''){
         loadScript('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+adsense_client, 'head', true, 'anonymous' );
         loadScript('/assets/js/google_search.js', 'body', false);
-        loadScript('https://www.googletagmanager.com/gtag/js?id=G-LGGMTY7TLB', 'head', true);
+        loadScript('https://www.googletagmanager.com/gtag/js?id='+gtag_id, 'head', true);
         loadScript('/assets/js/gtag.js', 'head', false);
 
       }
